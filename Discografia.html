@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="homepage.html">Início</a></li>
+            <li><a href="historia.html">Sobre</a></li>
+            <li><a href="Agenda.html">Agenda</a></li>
+            <li><a href="Discografia.html">Discografia</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="musicas.html">Musicas</a></li>
+            
+            
+        </ul>
+    </nav>
+    <div class="titulo">
+        <h1>Principais Álbuns</h1>
+        <hr>
+    </div>
+    <div class="base">
+        <div class="grid">
+            <div class="album" id="album1">
+                <div class="album inf">
+                    <h3>Álcool e Tigrinho</h3>
+                    <p>Ano de Lançamento: 2021</p>
+                </div>
+                <img src="imagens/alcool e slot.jpg" alt="Álbum 1">
+            </div>
+            <div class="album" id="album2">
+                <div class="album inf">
+                    <h3>Vendi minha casa pra jogar no Cassino</h3>
+                    <p>Ano de Lançamento: 2009</p>
+                </div>
+                <img src="imagens/Capa perdi tudo no cassino.jpg" alt="Álbum 2">
+            </div>
+            <div class="album" id="album3">
+                <div class="album inf">
+                    <h3>Horário Pagante</h3>
+                    <p>Ano de Lançamento: 2022</p>
+                </div>
+                <img src="imagens/horariospagantes.jpg" alt="Álbum 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(imagens/aa.jpg);
+        background-size: cover;
+    }
+    .titulo h1{
+        text-align: center;
+        font-weight: 300;
+        color: rgb(0, 0, 0);
+        font-family: "Oswald", sans-serif;
+        padding-top: 2%;
+    }
+    .base {
+        width: 100%;
+        max-width: 2400px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .album {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+    .album inf {
+        padding: 15px;
+        background-color: #eee;
+        border-bottom: 1px solid #ddd;
+    }
+    .album inf h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+    .album inf p {
+        margin: 5px 0;
+        color: #666;
+    }
+    .album img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .menu {
+    background-color: rgba(0, 0, 0, 0.0); 
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+.menu li {
+    margin: 0 65px; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 23px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+    position: relative;
+}
+
+.menu a:hover {
+    color: #ddd; 
+    transition: 0.5s;
+    border: none;
+    color: rgba(223, 217, 217, 0.685);
+    cursor: pointer;
+}
+.menu a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: width 0.4s ease-in-out; 
+}
+
+.menu a:hover::after {
+    width: 100%; 
+}
+</style>
