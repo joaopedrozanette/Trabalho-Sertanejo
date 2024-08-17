@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <nav class="menu">
+        <ul>
+            <li><a href="homepage.html">Início</a></li>
+            <li><a href="historia.html">Sobre</a></li>
+            <li><a href="Agenda.html">Agenda</a></li>
+            <li><a href="Discografia.html">Discografia</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="musicas.html">Musicas</a></li>
+            
+
+        </ul>
+    </nav>
+    <main>
+        <div class="topo">
+            <h1 class="titulo">Próximos Shows: 
+                <hr>
+            </h1>
+        </div>
+        <div class="base">
+            <div class="esq">
+                <div class="eventos">
+                    <div class="datas">
+                        <h2>Arrócha Safado</h2>
+                        <p>Dia 16/08 - 22:00 <p>Av. Javier Koelbl - Jardim Eliza I</p> </p>
+                        <div class="fotos"><img src="imagens/festa.jpg" alt="imagem1"></div>
+                    </div>
+                </div>
+                <div class="eventos">
+                    <div class="datas">
+                        <h2>Bailão BomBonjour</h2>
+                        <p>Dia 08/01 - 19:00 <p>Rua GuiDovelter - 270</p> </p>
+                        <div class="fotos"> <img src="imagens/festa0801.jpg" alt="imagem2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir">
+                <div class="eventos">
+                    <div class="datas">
+                        <h2>Noite Romântica</h2>
+                        <p>Dia 01/09 - 20:00 <p>Rua Ibitinga - 734</p> </p>
+                        <div class="fotos"><img src="imagens/festaromantica.jpg" alt="imagem3"></div>
+                    </div>
+                </div>
+                <div class="eventos">
+                    <div class="datas">
+                        <h2>Shows para os hammuds</h2>
+                        <p>Dia 11/09 - 20:00 <p>Kabul - Afeganistão</p> </p>
+                        <div class="fotos"><img src="imagens/arabesfestas.jpg" alt="imagem4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="centro">
+                <div class="eventos">
+                    <div class="datas">
+                        <h2>Shows Misterioso</h2>
+                        <p>Dia ??/?? - ??:?? <p>IFPR - Foz do Iguaçu</p> </p>
+                        <div class="fotos"><img src="imagens/interrogação.jpg" alt="imagem5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+</body>
+</html>
+<style>
+    body{
+        background-image: url(imagens/aa.jpg);
+        background-size: cover;
+    }
+    main{
+        color: rgb(0, 0, 0);
+        font-family: "Oswald", sans-serif;
+    }
+    .titulo{
+        text-align: center;
+        margin-top: 45px;   
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 40px;
+        height: 100px;
+    }
+    hr{
+        width: 18%;
+    }
+    .base .esq {
+        padding-left: 25%;
+        height: 40%;
+        float: left;
+    }
+    .base .eventos {
+        max-height: 350px;
+        max-width: 250px;
+    }
+    .base .eventos .datas {
+        background-color: rgba(240, 248, 255, 0.384);
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+    .base .eventos .datas h2{
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+    .base .eventos .datas p{
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+    .base .eventos .fotos img{
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .base .dir {
+        float: right;
+        padding-right: 25%;
+    }
+    .base .centro {
+        justify-content: center;
+        align-content: center;
+        padding: 5%;
+        padding-left: 7%;
+    }
+    .menu {
+        background-color: rgba(0, 0, 0, 0.0);
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu li {
+        margin: 0 15px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .menu a:hover {
+        color: #ddd;
+        transition: 0.5s;
+        border: none;
+        color: rgba(223, 217, 217, 0.685);
+        cursor: pointer;
+    }
+    .menu a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background-color: #ffffff;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .menu a:hover::after {
+        width: 100%;
+    }
+</style>
